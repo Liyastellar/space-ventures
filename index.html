@@ -96,6 +96,8 @@ p{margin:0 0 16px;max-width:62ch;color:var(--dim)}
 .gl{min-height:230px;display:flex;flex-direction:column;justify-content:space-between}
 .card{padding:26px}
 .card p{font-size:15px;margin:0}
+.card p a{color:var(--acc);text-decoration:none}
+.card p a:hover{text-decoration:underline}
 .gl .big{font:300 17px var(--h);letter-spacing:.04em}
 .gl small{font:500 10px var(--b);letter-spacing:.2em;color:var(--dim);display:block;margin-top:4px}
 .gl .go{align-self:flex-end;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;text-decoration:none;background:rgba(255,255,255,.06)}
@@ -249,7 +251,7 @@ team:()=>hdr('TEAM','Coming <em>soon.</em>'),
 apply:()=>hdr('APPLY','Applications open <em>December 5th.</em>')
 +sec(`<div class="soon"><b><i class="dot"></i>APPLICATIONS</b><span style="font:300 clamp(22px,3.4vw,40px) var(--h)">Application starts from Dec 5th</span><p style="margin:14px 0 0">Come back on that date to apply for Cohort 001.</p></div>`),
 contact:()=>hdr('CONTACT','Talk to <em>us.</em>')
-+sec(`<div class="grid">${soon('Email','To be added')}${soon('Phone','To be added')}<div class="card"><h3>Location</h3><p>Startup Park, Bengaluru, India</p></div></div>`)
++sec(`<div class="grid"><div class="card"><h3>Email</h3><p><a href="mailto:founder@t0spaceventures.com">founder@t0spaceventures.com</a></p></div><div class="card"><h3>Location</h3><p>Startup Park, Bengaluru, India</p></div></div>`)
 };
 const names={home:'Home',about:'About',program:'Program',resources:'Resources',funding:'Funding',problems:'Problem repository',collaborations:'Collaborations',events:'Events',faqs:'FAQs',team:'Team',apply:'Apply',contact:'Contact'};
 const main=['home','program','resources','funding','problems','team'];
